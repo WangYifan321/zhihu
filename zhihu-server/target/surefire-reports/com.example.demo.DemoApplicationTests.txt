@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 25.258 s <<< FAILURE! - in com.example.demo.DemoApplicationTests
+testGetDocument  Time elapsed: 1.165 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testGetDocument(DemoApplicationTests.java:117)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testDeleteIndex  Time elapsed: 1.029 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testDeleteIndex(DemoApplicationTests.java:85)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testDeleteRequest  Time elapsed: 1.006 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testDeleteRequest(DemoApplicationTests.java:136)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testCreateIndex  Time elapsed: 1.081 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testCreateIndex(DemoApplicationTests.java:72)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testAddDocument  Time elapsed: 1.114 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testAddDocument(DemoApplicationTests.java:99)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testExistIndex  Time elapsed: 1.028 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testExistIndex(DemoApplicationTests.java:78)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testIsExists  Time elapsed: 1.009 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testIsExists(DemoApplicationTests.java:109)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testBulkRequest  Time elapsed: 2.026 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testBulkRequest(DemoApplicationTests.java:155)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testUpdateRequest  Time elapsed: 1.037 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testUpdateRequest(DemoApplicationTests.java:128)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
+testSearch  Time elapsed: 1.042 s  <<< ERROR!
+java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+	at com.example.demo.DemoApplicationTests.testSearch(DemoApplicationTests.java:170)
+Caused by: java.net.ConnectException: Timeout connecting to [/127.0.0.1:9200]
+
