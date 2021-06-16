@@ -8,6 +8,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import store from "./store/store"
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+Vue.use(Vant);
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
 Vue.use(router);

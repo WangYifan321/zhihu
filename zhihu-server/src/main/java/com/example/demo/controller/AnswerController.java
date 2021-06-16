@@ -66,7 +66,7 @@ public class AnswerController {
     @ResponseBody
     @CrossOrigin(origins = "*",maxAge = 3600)
 
-    public List<Answer> getAllByQuestion(@PathVariable Integer id,HttpServletRequest request){
+    public List<Map<String,String>> getAllByQuestion(@PathVariable Integer id,HttpServletRequest request){
         String token = request.getHeader("token");
         if(redisUtil.get(token)!=null ) {
             Integer uid = Integer.parseInt(redisUtil.get(token).toString());
@@ -79,7 +79,7 @@ public class AnswerController {
             }//判断用户有没有打开历史记录
         }//插入历史记录
         questionService.updateClicked(questionService.getById(id));
-        return answerService.getAllAnswerByQuestion(id);
+        return answerService.getAll(id);
     }
 
     //没用的api

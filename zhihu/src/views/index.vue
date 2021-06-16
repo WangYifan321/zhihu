@@ -22,8 +22,8 @@
           <i class="el-icon-more"></i>
          </span>
     <el-dropdown-menu slot="dropdown">
-      <el-dropdown-item>我的主页</el-dropdown-item>
-      <el-dropdown-item>设置</el-dropdown-item>
+      <el-dropdown-item><el-link href="/home" :underline="false">我的主页</el-link></el-dropdown-item>
+      <el-dropdown-item><el-link href="/setting" :underline="false">设置</el-link></el-dropdown-item>
       <el-dropdown-item><el-link href="/ask" :underline="false">发布问题</el-link></el-dropdown-item>
       <el-dropdown-item><el-link @click="logout()" :underline="false">退出账号</el-link></el-dropdown-item>
     </el-dropdown-menu>
@@ -79,15 +79,15 @@ export default {
     ...mapMutations(['changeLogin']),
     loadAll() {
       return [
-        { "value": "三全鲜食（北新泾店）", "address": "长宁区新渔路144号" },
-        { "value": "Hot honey 首尔炸鸡（仙霞路）", "address": "上海市长宁区淞虹路661号" },
-        { "value": "新旺角茶餐厅", "address": "上海市普陀区真北路988号创邑金沙谷6号楼113" },
-        { "value": "泷千家(天山西路店)", "address": "天山西路438号" },
-        { "value": "胖仙女纸杯蛋糕（上海凌空店）", "address": "上海市长宁区金钟路968号1幢18号楼一层商铺18-101" },
-        { "value": "贡茶", "address": "上海市长宁区金钟路633号" },
-        { "value": "豪大大香鸡排超级奶爸", "address": "上海市嘉定区曹安公路曹安路1685号" },
-        { "value": "茶芝兰（奶茶，手抓饼）", "address": "上海市普陀区同普路1435号" },
-        { "value": "十二泷町", "address": "上海市北翟路1444弄81号B幢-107" },
+        { "value": "如何评价轮子哥不建议大学生把时间花在ACM竞赛上？", "address": "长宁区新渔路144号" },
+        { "value": "为何大司马在上交的待遇，和某流量明星在南大的待遇相差那么大？", "address": "上海市长宁区淞虹路661号" },
+        { "value": "新如何看待 85 后夫妻不让孩子上幼儿园，辞去工作还花 30 多万买房车去旅行？", "address": "上海市普陀区真北路988号创邑金沙谷6号楼113" },
+        { "value": "如何看待林俊杰「线上演唱会」最低票价 188 元，最高票价 938 元，你觉得合理吗？", "address": "天山西路438号" },
+        { "value": "如何评价《王者荣耀》西施「江南少女」皮肤？", "address": "上海市长宁区金钟路968号1幢18号楼一层商铺18-101" },
+        { "value": "如何看待《摩尔庄园》玩家「星无火」以欺骗小朋友毁号为乐？", "address": "上海市长宁区金钟路633号" },
+        { "value": "为什么最近恒大很多地区的楼盘打折很低并且必须要求付全款？真实情况是怎样的？", "address": "上海市嘉定区曹安公路曹安路1685号" },
+        { "value": "茶如何看待长沙一律所因收费过低被警告处分：最低应收 41 万却仅收五千？", "address": "上海市普陀区同普路1435号" },
+        { "value": "NBA 2020-21 赛季湖人 100:113 太阳，如何评价这场比赛？", "address": "上海市北翟路1444弄81号B幢-107" },
         { "value": "星移浓缩咖啡", "address": "上海市嘉定区新郁路817号" },
         { "value": "阿姨奶茶/豪大大", "address": "嘉定区曹安路1611号" },
         { "value": "新麦甜四季甜品炸鸡", "address": "嘉定区曹安公路2383弄55号" },
@@ -111,15 +111,6 @@ export default {
         { "value": "妙生活果园（北新泾店）", "address": "长宁区新渔路144号" },
         { "value": "香宜度麻辣香锅", "address": "长宁区淞虹路148号" },
         { "value": "凡仔汉堡（老真北路店）", "address": "上海市普陀区老真北路160号" },
-        { "value": "港式小铺", "address": "上海市长宁区金钟路968号15楼15-105室" },
-        { "value": "蜀香源麻辣香锅（剑河路店）", "address": "剑河路443-1" },
-        { "value": "北京饺子馆", "address": "长宁区北新泾街道天山西路490-1号" },
-        { "value": "饭典*新简餐（凌空SOHO店）", "address": "上海市长宁区金钟路968号9号楼地下一层9-83室" },
-        { "value": "焦耳·川式快餐（金钟路店）", "address": "上海市金钟路633号地下一层甲部" },
-        { "value": "动力鸡车", "address": "长宁区仙霞西路299弄3号101B" },
-        { "value": "浏阳蒸菜", "address": "天山西路430号" },
-        { "value": "四海游龙（天山西路店）", "address": "上海市长宁区天山西路" },
-        { "value": "樱花食堂（凌空店）", "address": "上海市长宁区金钟路968号15楼15-105室" },
         { "value": "壹分米客家传统调制米粉(天山店)", "address": "天山西路428号" },
         { "value": "福荣祥烧腊（平溪路店）", "address": "上海市长宁区协和路福泉路255弄57-73号" },
         { "value": "速记黄焖鸡米饭", "address": "上海市长宁区北新泾街道金钟路180号1层01号摊位" },

@@ -31,7 +31,6 @@ public class HistoryController {
 
     @DeleteMapping(path = "history")//清空历史记录
     @CrossOrigin(origins = "*",maxAge = 3600)
-
     @Transactional//先查询再删除，因此必须在顶级方法上加上事务
     public void deleteAll(HttpServletRequest request){
         String token = request.getHeader("token");

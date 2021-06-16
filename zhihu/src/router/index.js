@@ -10,6 +10,10 @@ import Hot from '../views/hot'
 import Recommend from '../components/recommend'
 import Selected from '../components/selected'
 import Answer from '../components/answer'
+import Setting from '../components/setting'
+import Home from '../views/home'
+import AddAnswer from '../components/addAnswer'
+import Comment from '../components/comment'
 Vue.use(Router);
 
 const router = new Router({
@@ -56,6 +60,23 @@ const router = new Router({
       {
             path: '/register',
             component: Register
+      },
+      {
+            path: '/setting',
+            component: Setting
+      },{
+            path: '/home',
+            component: Home
+      },{
+            path: '/addAnswer/:qid',
+            props: true,
+            component: AddAnswer,
+            name: 'addAnswer'
+      },{
+            path: '/comment/:aid',
+            name: 'comment',
+            props: true,
+            component: Comment
       },
         {
             path: '*',

@@ -1,8 +1,8 @@
 spring:
   datasource:
     username: root
-    password: wangyifan52199@
-    url: jdbc:mysql://47.111.190.15:3306/zhihu?useUnicode=true&characterEncoding=utf-8
+    password: 
+    url: 
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -11,12 +11,12 @@ spring:
   servlet:
     multipart:
       max-file-size: 100MB
-      location: D:/xuexi/zhiphoto
+      location: 
       max-request-size: 1000MB
   redis:
-    host: 47.111.190.15
-    port: 6379
-    password: wangyifan52199
+    host: 
+    port:
+    password: 
 mybatis:
   type-aliases-package: com.example.demo.pojo
   mapper-locations: classpath:mybatis/mapper/*.xml
